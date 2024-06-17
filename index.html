@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container d-flex justify-content-center align-items-center full-height ">
+        <div class="custom-container">
+            <h1 id="name" class="d-flex justify-content-center">usman</h1>
+            <form action="" id="numberForm">
+                <div class="form-group">
+                    <label for="lleher">Lebar Leher:</label>
+                    <input type="number" id="lleher" name="lleher" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lbadan">Lebar Badan:</label>
+                    <input type="number" id="lbadan" name="lbadan" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lpinggang">Lebar Pinggang:</label>
+                    <input type="number" id="lpinggang" name="lpinggang" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lbahu">Lebar Bahu:</label>
+                    <input type="number" id="lbahu" name="lbahu" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="ppunggung">Panjang Punggung:</label>
+                    <input type="number" id="ppunggung" name="ppunggung" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lpunggung">Lebar Punggung:</label>
+                    <input type="number" id="lpunggung" name="lpunggung" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="pmuka">Panjang Muka:</label>
+                    <input type="number" id="pmuka" name="pmuka" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lmuka">Lebar Muka:</label>
+                    <input type="number" id="lmuka" name="lmuka" min="0" max="100" step="1" placeholder="Enter a number">
+                    <span id="error-message" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal1">
+                        Cick Me!
+                      </button>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal2">
+                            Depan
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary  belakang" data-toggle="modal" data-target="#myModal3">
+                            Belakang
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+     <!-- Trigger buttons for modals -->
+     
+      
+      
+    
+      <!-- Modal 1 -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModal1Label">Modal 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This is the content of the first modal.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal 2 -->
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModal2Label">Modal 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This is the content of the second modal.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal 3 -->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModal3Label">Tampak Belakang</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-fashionBelakang">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-primary " id="exampleModalLabel">Bagian Belakang</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-fashion">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Include jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
